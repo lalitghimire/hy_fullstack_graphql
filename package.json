@@ -1,0 +1,23 @@
+{
+  "name": "hy_fullstack_graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalitghimire/hy_fullstack_graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lalitghimire/hy_fullstack_graphql/issues"
+  },
+  "homepage": "https://github.com/lalitghimire/hy_fullstack_graphql#readme",
+  "dependencies": {
+    "apollo-server": "^3.10.1",
+    "graphql": "^16.6.0"
+  }
+}
