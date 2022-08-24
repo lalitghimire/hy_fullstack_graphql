@@ -33,3 +33,20 @@ Modify the `allBooks` query so that a user can give an optional parameter author
 
 8.5: Books by genre  
 Modify the query `allBooks` so that a user can give an optional parameter genre. The response should include only books of that genre.
+
+8.6: Adding a book  
+Implement mutation `addBook`, which can be used like this:
+
+```
+mutation {
+  addBook(
+    title: "NoSQL Distilled",
+    author: "Martin Fowler",
+    published: 2012,
+    genres: ["database", "nosql"]
+  ) {
+    title,
+    author
+  }
+}
+```
