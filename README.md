@@ -24,3 +24,6 @@ query {
 }
 
 ```
+
+8.3 All Authors  
+Implement query `allAuthors`, which returns the details of all authors. The response should include a field `bookCount` containing the number of books the author has written.

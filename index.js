@@ -101,12 +101,14 @@ const typeDefs = gql`
         name: String!
         id: ID!
         born: Int
+        bookCount: Int
     }
 
     type Query {
         bookCount: Int!
         authorCount: Int!
         allBooks: [Book!]
+        allAuthors: [Author!]
     }
 `;
 
@@ -115,6 +117,25 @@ const resolvers = {
         bookCount: () => books.length,
         authorCount: () => authors.length,
         allBooks: () => books,
+        allAuthors: () => {
+            return authors.map((author) => {
+                const bookCount = books.reduce(
+                    (count, book) => (book.author === author.name ? count + 1 : count),
+                    0
+                );
+
+                return { ...author, bookCount };
+            });
+
+            // const booksOfSingleAuthor = authors.map((author) =>
+            //     books.filter((book) => book.author === author.name)
+            // );
+            // const result = booksOfSingleAuthor.map((item) => ({
+            //     name: item[0].author,
+            //     bookCount: item.length,
+            // }));
+            // return result;
+        },
     },
 };
 
