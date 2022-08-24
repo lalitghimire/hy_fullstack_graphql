@@ -19,7 +19,8 @@
     "homepage": "https://github.com/lalitghimire/hy_fullstack_graphql#readme",
     "dependencies": {
         "apollo-server": "^3.10.1",
-        "graphql": "^16.6.0"
+        "graphql": "^16.6.0",
+        "uuid": "^8.3.2"
     },
     "devDependencies": {
         "nodemon": "^2.0.19"
