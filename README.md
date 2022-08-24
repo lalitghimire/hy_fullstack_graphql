@@ -27,3 +27,6 @@ query {
 
 8.3 All Authors  
 Implement query `allAuthors`, which returns the details of all authors. The response should include a field `bookCount` containing the number of books the author has written.
+
+8.4: Books of an author
+Modify the `allBooks` query so that a user can give an optional parameter author. The response should include only books written by that author.
